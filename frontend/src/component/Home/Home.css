@@ -1,0 +1,141 @@
+.hero-section {
+    height: 75vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+  }
+  .hero-section p {
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  .hero-section h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .main-div{
+    height: 50vmin;
+    background-color: #00312C;
+    background-image: url("https://media.navyasfashion.com/catalog/product/cache/184a226590f48e7f268fa34c124ed9e1/d/s/dsc06369.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .h1p{
+    position: absolute;
+  }
+  .main-div h1{
+    font-size: 2.5vmax;
+    text-transform: uppercase;
+    color: white;
+    top: 3rem;
+    text-transform: capitalize;
+  }
+  .main-div p{
+    font-size : 1.4vmax;
+    color: white;
+    bottom: 12vmax;
+    text-transform: capitalize;
+  }
+  #btn{
+    display: block;
+    bottom: 8vmax;
+  }
+  .svgmod{
+    position: absolute;
+    bottom: 0px;
+  }
+  #prod-head{
+    font-size: 1.4vmax;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1vmax;
+    border-bottom: 1px solid rgba(21,21,21,0.5);
+    width: 20vmax;
+    margin: 5vmax auto;
+  }
+  .container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .productCard {
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+  }
+  
+  .productCard > img {
+    width: 14vmax;
+  }
+  
+  .productCard > div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .productCardSpan {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+  
+  .productCard > p {
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+  }
+  
+  .productCard > span {
+    margin: 0.5vmax;
+    color: tomato;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+  }
+  
+  .productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  
+    transform: translateY(-1vmax);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .productCard > p {
+      font-size: 1.7vmax;
+    }
+  
+    .productCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+  
+    .productCard > span {
+      font-size: 1.5vmax;
+    }
+  
+    .productCard > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }
