@@ -4,11 +4,13 @@ import { CgProfile } from "react-icons/cg";
 import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
-
+import UserOptions from "./UserOptions";
+import { useSelector } from "react-redux";
 
 const Navbar = ()=>{
     const [showMediaIcons, setShowMediaIcons] = useState(false);
-    
+    const {isAuthenticated,user} = useSelector((state)=>state.user);
+
     return(
         <>
            <div className="main-nav">
@@ -38,7 +40,7 @@ const Navbar = ()=>{
               <NavLink to="/search"><FaSearch/></NavLink>
             </li>
             <li className="icons-hider">
-              <NavLink to="/cart"><FaShoppingCart/></NavLink>
+              <NavLink to="/cart"><FaShoppingCart color="primary"/></NavLink>
             </li>
             <li className="icons-hider">
               <NavLink to="/login"><CgProfile/></NavLink>
@@ -57,15 +59,17 @@ const Navbar = ()=>{
                         <FaShoppingCart style = {{color : "black"}}/>
                         </NavLink>
                      </li>
-                     <li>
-                        <NavLink to ="/login" className="contacts">
+                     {
+                        isAuthenticated ? <UserOptions user = {user}/> : <li>
+                                                          <NavLink to ="/login" className="contacts">
                         <CgProfile style = {{color : "black"}}/>
                         </NavLink>
-                     </li>
+                        </li>
+                     }
                  </ul>
                  <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
+              <GiHamburgerMenu/>
             </a>
         </div>
               </div>

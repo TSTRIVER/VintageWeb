@@ -27,33 +27,51 @@
     opacity: 0.85;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
   }
   .h1p{
     position: absolute;
   }
+  #welcome{
+    top: 5rem;
+  }
+  #stop{
+    top: 14.5rem;
+  }
   .main-div h1{
     font-size: 2.5vmax;
     text-transform: uppercase;
     color: white;
-    top: 3rem;
     text-transform: capitalize;
   }
   .main-div p{
     font-size : 1.4vmax;
     color: white;
-    bottom: 12vmax;
     text-transform: capitalize;
   }
   #btn{
     display: block;
-    bottom: 8vmax;
+    bottom: 10rem;
+    width: 6vmax;
+    height: 4vmax;
+    background-color: rgba(15, 15, 15, 0.26);
+    color: white;
+    border: none;
+    text-align: center;
+  }
+  #btn:hover{
+     width: 5vmax;
+     height: 3vmax;
+     cursor: pointer;
   }
   .svgmod{
     position: absolute;
     bottom: 0px;
+  }
+  .prod-section{
+    position: relative;
   }
   #prod-head{
     font-size: 1.4vmax;
@@ -63,7 +81,9 @@
     border-bottom: 1px solid rgba(21,21,21,0.5);
     width: 20vmax;
     margin: 5vmax auto;
+    letter-spacing: 1px;
   }
+
   .container {
     display: flex;
     margin: 2vmax auto;
@@ -83,6 +103,11 @@
     transition: all 0.5s;
     padding-bottom: 0.5vmax;
   }
+
+  .productCardSpan{
+    margin: 0.5vmax;
+    font: 300 0.7vmax;
+  }
   
   .productCard > img {
     width: 14vmax;
@@ -97,11 +122,10 @@
   
   .productCardSpan {
     margin: 0.5vmax;
-    font: 300 0.7vmax "Roboto";
+    font: 300 0.7vmax;
   }
   
   .productCard > p {
-    font-family: "Roboto";
     font-size: 1.2vmax;
     margin: 1vmax 0.5vmax;
     margin-bottom: 0;
@@ -110,7 +134,6 @@
   .productCard > span {
     margin: 0.5vmax;
     color: tomato;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1vmax;
   }
   
@@ -118,6 +141,12 @@
     box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
   
     transform: translateY(-1vmax);
+  }
+
+  @media screen and (max-width: 1400px){
+    .cont > span{
+      font-size: 1vmax;
+    }
   }
   
   @media screen and (max-width: 600px) {
@@ -136,6 +165,25 @@
   
     .productCard > div > span {
       margin: 0 0.5vmax;
-      font: 300 1vmax "Roboto";
+      font: 300 1vmax;
+    }
+    #btn{
+      bottom: 5rem;
+      width: 4vmax;
+      height: 2vmax;
+    }
+    #stop{
+      top: 12rem;
+    }
+  }
+  @media screen and (max-width: 400px){
+    #btn{
+      bottom: 3.5rem;
+    }
+    #stop{
+      top: 8rem
+    }
+    #welcome{
+      top: 3rem
     }
   }

@@ -1,13 +1,14 @@
 .productsHeading {
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10vw;
-    width: 15vw;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    margin-top: 13vw;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.171);
     padding: 2vmax;
     color: rgba(0, 0, 0, 0.678);
     font: 500 1.5vmax;
     text-align: center;
+    letter-spacing: 1px;
+    font-weight: bolder;
   }
 
   .products {
@@ -25,7 +26,7 @@
   }
   
   .page-item {
-    background-color: skyblue;
+    background-color: rgba(114, 111, 111, 0.518);
     list-style: none;
     border: 1px solid rgba(0, 0, 0, 0.178);
     padding: 1vmax 1.5vmax;
@@ -41,7 +42,7 @@
   }
   .page-link {
     text-decoration: none;
-    font: 300 0.7vmax "Roboto";
+    font: 300 0.7vmax;
     color: rgb(80, 80, 80);
     transition: all 0.3s;
   }

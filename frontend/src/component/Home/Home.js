@@ -33,8 +33,8 @@ const Home = ()=>{
            </div>
 
           <div className="main-div">
-            <h1 className="h1p">Welcome to Vintage Lucknowee</h1>
-            <p className="h1p">Your 1-stop Destination to the world of chikankari</p>
+            <h1 className="h1p" id="welcome">Welcome to Vintage Lucknowee</h1>
+            <p className="h1p" id="stop">Your 1-stop Destination to the world of chikankari</p>
             <button id="btn" className="h1p">
                 Scroll <CgMouse/>
             </button>
@@ -42,7 +42,7 @@ const Home = ()=>{
           </div>
            
           <div className="prod-section">
-               <h1 id="prod-head">Featured Products</h1>
+               <h1 id="prod-head">Featured Products..</h1>
            </div>
 
            <div className="container" id="container">
@@ -53,7 +53,7 @@ const Home = ()=>{
            </>
            }
      </>
-    )
-}
+     )
+    }
 
 export default Home;

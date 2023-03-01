@@ -7,10 +7,10 @@ import Loader from "../layout/loader/Loader";
 import Product from "../Home/Product";
 import { useParams } from 'react-router-dom';
 import Pagination from "react-js-pagination";
-import MetaData from "../layout/MetaData"
+import MetaData from "../layout/MetaData";
+
 
 const Products = ({match}) => {
-
 
     const dispatch = useDispatch();
 
@@ -27,7 +27,8 @@ const Products = ({match}) => {
    useEffect(() => {
       dispatch(getProduct(keyword,currentPage));
    }, [dispatch,keyword,currentPage])
-   
+
+  
 
   return (
     <>

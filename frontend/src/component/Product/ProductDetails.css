@@ -43,7 +43,7 @@
 }
 
 .detailsBlock-2-span {
-  font: 200 0.8vmax;
+  font: 200 1vmax;
   color: rgba(0, 0, 0, 0.699);
 }
 .detailsBlock-3-1{
@@ -103,7 +103,7 @@
   }
   .submitReview {
     border: none;
-    background-color: tomato;
+    background-color: yellowgreen;
     font: 500 0.7vmax;
     border-radius: 20px;
     padding: 0.6vmax 2vmax;
@@ -114,18 +114,34 @@
     outline: none;
   }
   .submitReview:hover {
-    background-color: rgb(197, 68, 45);
+    background-color: yellow;
     transform: scale(1.1);
+  }
+  .submitDialog {
+    display: flex;
+    flex-direction: column;
+  }
+  .submitDialogTextArea {
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font: 300 1rem;
   }
   .reviewsHeading {
     color: #000000be;
-    font: 500 1.4vmax "Roboto";
+  font-weight: 500;
+  font-size: 1.7vmax;
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.226);
     padding: 1vmax;
     width: 20vmax;
     margin: auto;
     margin-bottom: 4vmax;
+    letter-spacing: 1px;
+  }
+  .revboxtitle{
+    font-family: 'Poppins', sans-serif;
   }
   .reviews {
     display: flex;
@@ -161,7 +177,7 @@
   }
   @media screen and (max-width: 1000px){
       .caros{
-        width: 70%;
+        width: 60%;
         height: 45vmax;
         margin-left: auto;
         margin-right: auto;
@@ -236,5 +252,11 @@
         padding: 1.5vmax;
         width: 20vmax;
         margin: 3vmax 0;
+      }
+      .reviewCard > p {
+        font: 600 3vw;
+      }
+      .reviewCardComment {
+        font: 300 5vw;
       }
   }
