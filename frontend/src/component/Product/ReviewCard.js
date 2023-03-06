@@ -12,7 +12,7 @@ const ReviewCard = ({ review }) => {
   
     return (
       <div className="reviewCard">
-        <img src="https://mymodernmet.com/wp/wp-content/uploads/2020/08/smiley-face-history-0.jpg" alt="User" />
+        <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg" alt="User" />
         <p>{review.name}</p>
         <Rating {...options} />
         <span className="reviewCardComment">{review.comment}</span>
