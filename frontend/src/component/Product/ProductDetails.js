@@ -134,7 +134,7 @@ const ProductDetails = ({match}) => {
                   </button>
                 </div>
                 <p>
-                  Status:
+                  Status: 
                   <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
                     {product.Stock < 1 ? "OutOfStock" : "InStock"}
                   </b>
