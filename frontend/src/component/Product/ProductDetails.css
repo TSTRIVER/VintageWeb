@@ -12,7 +12,7 @@
     width: 50%;
     top: 15vw;
     right: 0px;
-    background-color: skyblue;
+    background-color: rgb(149, 209, 232);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -103,7 +103,7 @@
   }
   .submitReview {
     border: none;
-    background-color: yellowgreen;
+    background-color: rgb(78, 99, 207);
     font: 500 0.7vmax;
     border-radius: 20px;
     padding: 0.6vmax 2vmax;
@@ -115,6 +115,7 @@
   }
   .submitReview:hover {
     background-color: yellow;
+    color: black;
     transform: scale(1.1);
   }
   .submitDialog {
@@ -190,7 +191,7 @@
         align-items : center;
       }
       #review_div{
-        top: calc(15vw + 70vmax);
+        top: calc(15vw + 88vmax);
       }
       .detailsBlock-1 > h2 {
         font-size: 2.8vmax;
