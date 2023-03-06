@@ -14,7 +14,7 @@ const Product = ({product}) => {
   return (
     <>
      <Link className="productCard" to={`/product/${product._id}`}>
-        <img src={product.images[0].url} alt={product.name} style={{borderRadius : "10%"}}/>
+        <img src={product.images[0].url} alt={product.name} style={{borderRadius : "10%",height: "20vmax"}}/>
         <p>{product.name}</p>
         <div className='cont'>
             <Rating {...options}/> <span className='productCardSpan'>({product.numOfReviews} Reviews)</span>
